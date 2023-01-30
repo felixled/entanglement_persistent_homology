@@ -1,11 +1,12 @@
 run javaplex/load_javaplex.m
 import edu.stanford.math.plex4.*;
 %%
+mode = 'graph';
 g_6_vertices2
 %%
 
-[vertices1,simplices1,mx1] = compute_weights(G1);
-[vertices2,simplices2,mx2] = compute_weights(G2);
+[vertices1,simplices1,mx1] = compute_weights(G1,mode);
+[vertices2,simplices2,mx2] = compute_weights(G2,mode);
 
 graph1 = figure
 plot(graph(G1))

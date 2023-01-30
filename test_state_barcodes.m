@@ -1,6 +1,7 @@
 run javaplex/load_javaplex.m
 import edu.stanford.math.plex4.*;
 
+mode = 'state';
 d = 2;
 n = 4;
 
@@ -20,8 +21,8 @@ end
 psi2 = randPsi(d^n);
 
 %%
-[vertices1,simplices1,mx1] = compute_state_weights(psi1,d,n);
-[vertices2,simplices2,mx2] = compute_state_weights(psi2,d,n);
+[vertices1,simplices1,mx1] = compute_weights(psi1,mode,d,n);
+[vertices2,simplices2,mx2] = compute_weights(psi2,mode,d,n);
 
 %% 
 options1.filename = 'barcodes1';
