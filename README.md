@@ -14,7 +14,7 @@ To work with graph states, run [`test_graph_barcodes.m`](test_graph_barcodes.m).
 To work with arbitrary states on `n` systems of local dimension `d`, run [`test_state_barcodes.m`](test_state_barcodes.m). Create the two states to compare in the variables `psi1` and `psi2`, respectively.
 
 ## List of script files
-- [`compute_functional.m`](compute_functional.m): Computes the entropy functional from eq.(2) in the paper draft for a given subset `A` of the `n` qubits.
+- [`deformed_total_correlation.m`](deformed_total_correlation.m): Computes the deformed total correlation functional from eq.(2) in the paper for a given subset `A` of the `n` qubits using the entropy function specified in [`compute_entropies.m`](compute_entropies.m).
 - [`compute_entropies.m`](compute_entropies.m): Computes a vector of all subsystem entropies of a given state, either for a graph state or a generic state.
 - [`compute_weights.m`](compute_weights.m): Computes the weights of all vertices and simplices of a given state, either for a graph state or a generic state.
 - [`compute_persistent_homology.m`](compute_persistent_homology.m): Computes the persistent homology of a pair of list of vertices and simplices using the Javaplex package.
