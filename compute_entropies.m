@@ -1,4 +1,6 @@
 function entropies = compute_entropies(object,mode,d,n)
+% We use the linear entropy (2-Tsallis entropy) in this example.
+% Change this line to use a different entropy function.
 linent = @(x) 1-sum(x.^2);
 switch mode
     case 'graph'
@@ -19,8 +21,6 @@ for j=1:size(subsets,1)
     subset = subsets(j,:);
     A = N(subset==1);
     if isempty(A)
-        entropies(num2str(subset)) = 0;
-    elseif (length(A)==n)
         entropies(num2str(subset)) = 0;
     else
         switch mode

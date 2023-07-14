@@ -3,22 +3,12 @@ import edu.stanford.math.plex4.*;
 
 mode = 'state';
 d = 2;
-n = 4;
+n = 6;
 
-I = eye(d);
-psi1 = zeros(d^n,1);
-for j=1:d
-    psi1 = psi1 + tensor({I(:,j),n})/sqrt(d);
-end
-% w = tensor(e0,{e1,n-1});
-% psi2 = zeros(size(psi1));
-% for j=1:n
-%     psi2 = psi2 + sysexchange(w,[1,j],2*ones(1,n));
-% end
-% psi2 = psi2/norm(psi2);
+osterloh_siewert
 
-% psi1 = randPsi(d^n);
-psi2 = randPsi(d^n);
+psi1 = chi4;
+psi2 = chi5;
 
 %%
 [vertices1,simplices1,mx1] = compute_weights(psi1,mode,d,n);

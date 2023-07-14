@@ -1,4 +1,4 @@
-function res = compute_functional(entropies,A,n)
+function res = deformed_total_correlation(entropies,A,n)
 A_string = subset2string(A,n);
 res = -entropies(num2str(A_string));
 for j=1:length(A)

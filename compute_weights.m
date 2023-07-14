@@ -26,7 +26,9 @@ end
 for j=2:S
     subset = subsets(j,:);
     A = N(subset==1);
-    x = compute_functional(entropies,A,n);
+    % We compute persistent homology using the deformed total correlation.
+    % Change this line if you want to use a different functional.
+    x = deformed_total_correlation(entropies,A,n);
     if (x > mx)
         mx = x;
     end
