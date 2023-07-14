@@ -5,7 +5,7 @@ This collection of MATLAB scripts computes and compares the persistent homology 
 ## Prerequisites
 - Matlab R2022b or newer (the codes uses the `dictionary` function which was implemented in R2022b).
 - Javaplex: http://appliedtopology.github.io/javaplex/
-- Toby Cubitt's _quantinf_ package: https://www.dr-qubit.org/matlab.html
+- function `TrX` from Toby Cubitt's _quantinf_ package: https://www.dr-qubit.org/matlab.html
 
 ## How to use this script
 
