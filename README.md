@@ -16,7 +16,7 @@ To work with arbitrary states on `n` systems of local dimension `d`, run [`test_
 ## List of script files
 - [`compute_functional.m`](compute_functional.m): Computes the entropy functional from eq.(2) in the paper draft for a given subset `A` of the `n` qubits.
 - [`compute_entropies.m`](compute_entropies.m): Computes a vector of all subsystem entropies of a given state, either for a graph state or a generic state.
-- ['compute_weights.m`](compute_weights.m): Computes the weights of all vertices and simplices of a given state, either for a graph state or a generic state.
+- [`compute_weights.m`](compute_weights.m): Computes the weights of all vertices and simplices of a given state, either for a graph state or a generic state.
 - [`compute_persistent_homology.m`](compute_persistent_homology.m): Computes the persistent homology of a pair of list of vertices and simplices using the Javaplex package.
 - [`test_graph_barcodes.m`](test_graph_barcodes.m): Test script to compute and compare the persistent homology of two given graph states.
 - [`test_state_barcodes.m`](test_state_barcodes.m): Test script to compute and compare the persistent homology of two given states.
