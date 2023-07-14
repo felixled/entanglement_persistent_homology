@@ -1,18 +1,23 @@
 run javaplex/load_javaplex.m
 import edu.stanford.math.plex4.*;
 %%
+% either create two graphs G1 and G2 on the same number of vertices, or
+% choose one of the following example files:
+g_3_regular_6_vertices
+
 mode = 'graph';
-g_6_vertices2
+n = 6;
+[G1,G2] = import_graphs();
 %%
 
 [vertices1,simplices1,mx1] = compute_weights(G1,mode);
 [vertices2,simplices2,mx2] = compute_weights(G2,mode);
 
-graph1 = figure
+graph1 = figure;
 plot(graph(G1))
 title('Graph 1')
 saveas(gcf,'graph1.png')
-graph2 = figure
+graph2 = figure;
 plot(graph(G2))
 title('Graph 2')
 saveas(gcf,'graph2.png')
