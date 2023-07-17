@@ -1,15 +1,15 @@
 run javaplex/load_javaplex.m
 import edu.stanford.math.plex4.*;
 %%
-% either create two graphs G1 and G2 on the same number of vertices, or
-% choose one of the following example files:
-g_3_regular_6_vertices
+% either create two graphs G1 and G2 on the same number n of vertices, or
+% choose one of the following example files (* is the example in Fig.2 in the paper):
+% g_6vertices,* g_6vertices2, g_6vertices_3regular, g_8vertices,
+% g_petersen_star
 
 mode = 'graph';
-n = 6;
-[G1,G2] = import_graphs();
-%%
+g_6vertices
 
+%%
 [vertices1,simplices1,mx1] = compute_weights(G1,mode);
 [vertices2,simplices2,mx2] = compute_weights(G2,mode);
 

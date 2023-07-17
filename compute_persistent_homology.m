@@ -6,12 +6,9 @@ N = 1:n;
 for s=2:size(subsets,1)
     subset = subsets(s,:);
     A = N(subset==1);
-%     disp(['A = ',num2str(A)])
     if length(A)==1
-%         disp(['Vertex time: ',num2str(vertices(num2str(A)))])
         stream.addVertex(A,vertices(num2str(A)));
     else
-%         disp(['Simplex time: ',num2str(simplices(num2str(A)))])
         stream.addElement(A,simplices(num2str(A)));
     end
 end
